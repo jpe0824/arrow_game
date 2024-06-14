@@ -1,0 +1,53 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.state-1::before {
+  content: "↑";
+}
+
+.state-2::before {
+  content: "→";
+}
+
+.state-3::before {
+  content: "↓";
+}
+
+.state-4::before {
+  content: "←";
+}
+
+.win-message {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: green;
+}
+
+.timer {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.reset-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
